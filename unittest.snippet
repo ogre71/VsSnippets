@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Unit Test</Title>
+      <Author>Jason Secrest</Author>
+      <Description>Unit Test Template with 2 Parts</Description>
+      <HelpUrl>https://msdn.microsoft.com/en-us/library/ms165394.aspx</HelpUrl>
+      <SnippetTypes />
+      <Keywords />
+      <Shortcut>ut</Shortcut>
+    </Header>
+    <Snippet>
+      <References />
+      <Imports />
+      <Declarations>
+        <Literal Editable="true">
+          <ID>something</ID>
+          <Type></Type>
+          <ToolTip>Name of the class being tested.</ToolTip>
+          <Default>Something</Default>
+          <Function></Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>doSomething</ID>
+          <Type></Type>
+          <ToolTip>The action which the unit test is testing.</ToolTip>
+          <Default>DoSomething</Default>
+          <Function></Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Kind="method decl" Delimiter="$"><![CDATA[[TestMethod]
+public void $something$Should$doSomething$()
+{
+	Assert.IsTrue(false);
+}]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
